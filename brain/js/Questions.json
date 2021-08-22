@@ -1,0 +1,112 @@
+{
+    "Questions" : {
+       "Q1": {
+        "Ques" : "Capital of pk?",
+        "ans" : 1,
+        "asked" : 0,
+        "o1" : "islamabad",
+        "o2" : "Karachi",
+        "o3" : "Lahore",
+        "o4" : "Peshawar"
+      },
+      "Q10" : {
+        "Ques" : "How do you call a function named 'myFunction'?",
+        "ans" : 1,
+        "asked" : 0,
+        "o1" : "myFunction()",
+        "o2" : "call function myFunction()",
+        "o3" : "call myFunction()",
+        "o4" : "None of the mentioned"
+      },
+      "Q2" : {
+        "Ques" : "To which object does the location property belong?",
+        "ans" : 1,
+        "asked" : 0,
+        "o1" : "Window",
+        "o2" : "Position",
+        "o3" : "Element",
+        "o4" : "Location"
+      },
+      "Q3" : {
+        "Ques" : "What is the result of the following code snippet? <br> <pre> window.location === document.location </pre>",
+        "ans" : 2,
+        "asked" : 0,
+        "o1" : "False",
+        "o2" : "True",
+        "o3" : "1",
+        "o4" : "0"
+      },
+      "Q4" : {
+        "Ques" : "Which of the following is not a framework?",
+        "ans" : 3,
+        "asked" : 0,
+        "o1" : "jQuery",
+        "o2" : ".NET",
+        "o3" : "JavaScript",
+        "o4" : "None of the mentioned"
+      },
+      "Q5" : {
+        "Ques" : "Inside which HTML element do we put the JavaScript?",
+        "ans" : 2,
+        "asked" : 0,
+        "o1" : "&lt;javascript&gt;",
+        "o2" : "&lt;script&gt;",
+        "o3" : "&lt;scripting&gt;",
+        "o4" : "&lt;js&gt;"
+      },
+      "Q6" : {
+        "Ques" : "What is the correct JavaScript syntax to change the content of the HTML element below? <br> <pre>&lt;p id='demo'&gtThis is made by Shahbaaz.&lt;/p&gt</pre>",
+        "ans" : 3,
+        "asked" : 0,
+        "o1" : "document.getElementByName('p').innerHTML = 'Hello World!';",
+        "o2" : "#demo.innerHTML = 'Hello World!;'",
+        "o3" : "document.getElementById('demo').innerHTML = 'Hello World!';",
+        "o4" : "document.getElement('p').innerHTML = 'Hello World!';"
+      },
+      "Q7" : {
+        "Ques" : "What is the correct syntax for referring to an external script called 'script.js'?",
+        "ans" : 1,
+        "asked" : 0,
+        "o1" : "&lt;script src='script.js'&gt;",
+        "o2" : "&lt;script href='script.js'&gt;",
+        "o3" : "&lt;script name='script.js'&gt;",
+        "o4" : "&lt;script link='script.js'&gt;"
+      },
+      "Q8" : {
+        "Ques" : "How do you write 'Hello World' in an alert box?",
+        "ans" : 1,
+        "asked" : 0,
+        "o1" : "alert('Hello World');",
+        "o2" : "msgBox('Hello World');",
+        "o3" : "prompt('Hello World');",
+        "o4" : "alertBox('Hello World');"
+      },
+      "Q9" : {
+        "Ques" : "How do you create a function in JavaScript?",
+        "ans" : 3,
+        "asked" : 0,
+        "o1" : "function = myFunction()",
+        "o2" : "function:myFunction()",
+        "o3" : "function myFunction()",
+        "o4" : "None of the mentioned"
+      }
+    },
+    "score" : {
+      "-MgzApHR2P9Yd00SATlX" : {
+        "email" : "nabiasheikh2222@gmail.com",
+        "name" : "Nabia Sheikh",
+        "score" : "10"
+      },
+      "-Mh--vyVc81lXwCvE_2C" : {
+        "email" : "Test@gmail.com",
+        "name" : "Testing Purpose",
+        "score" : "10"
+      },
+      "-Mh-6WHiFConl0j9QFCK" : {
+        "email" : "test@gmail.com",
+        "name" : "Nabia",
+        "score" : "10"
+      }
+    }
+  }
+  

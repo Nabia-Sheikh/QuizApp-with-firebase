@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		/>
-		<!-- Google Material Icons -->
-		<link
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet"
-		/>
-		<!-- Custom Style Sheet -->
-		<link rel="stylesheet" href="brain/css/style.css" />
-		<title>Quiz App!</title>
-		<link rel="icon" type="image/png" href="brain/img/fav.png" />
-	</head>
-	<body onload="chkUser()">
-		<div class="container box-shadow">
 
-			<div class="Login">
-				<div class="inner form" id="username">
-					<form action="" class="form">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<!-- Google Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!-- Custom Style Sheet -->
+	<link rel="stylesheet" href="brain/css/style.css" />
+	<title>Quiz App!</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="brain/img/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="brain/img/favicon-32x32.png">
+</head>
 
-						<i class="material-icons">face</i> <br>
-						<label for="stdName">Name</label>
-						<input type="text" name="name" width="200px" id="stdName" class="form-control mb-3"
-							placeholder="Enter Name">
-						<label for="email">Email</label>
-						<input type="text" class="form-control mb-3" name="email" id="email" placeholder="Enter Email"
-							width="200px">
-						<label for="password">Password</label>
-						<input type="password" class="form-control" name="email" id="password" placeholder="Enter Password"
-							width="200px">
-						<div class="signin">
-							<button type="button" class="btn btn-outline-info signInBtn" onclick="signin()">SignIn</button>
-							<button type="button" class="btn btn-primary signUpBtn	 " data-toggle="modal"
-								data-target="#signupModal">
-								Sign Up
+<body onload="chkUser()">
+	<div class="container box-shadow">
+
+		<div class="Login">
+			<div class="inner form" id="username">
+				<form action="" class="form">
+
+					<i class="material-icons">face</i> <br>
+					<label for="stdName">Name</label>
+					<input type="text" name="name" width="200px" id="stdName" class="form-control mb-3"
+						placeholder="Enter Name">
+					<label for="email">Email</label>
+					<input type="text" class="form-control mb-3" name="email" id="email" placeholder="Enter Email"
+						width="200px">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" name="email" id="password" placeholder="Enter Password"
+						width="200px">
+					<div class="signin">
+						<button type="button" class="btn btn-outline-info signInBtn" onclick="signin()">SignIn</button>
+						<button type="button" class="btn btn-primary signUpBtn	 " data-toggle="modal"
+							data-target="#signupModal">
+							Sign Up
+						</button>
+
+					</div>
+			</div>
+			</form>
+			<!-- Modal -->
+			<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" style="color: grey;" id="exampleModalLabel">Sign Up</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
 							</button>
-
 						</div>
-				</div>
-				</form>
-				<!-- Modal -->
-				<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-					aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" style="color: grey;" id="exampleModalLabel">Sign Up</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<div class="signup">
-									<label for="Email">Email</label>
-									<input type="text" class="form-control" name="email" id="Email"
-										placeholder="Enter Email" width="200px"><br>
-									<label for="Password">Password</label>
-									<input type="password" class="form-control mb-5" name="email" id="Password"
-										placeholder="Enter password" width="200px">
-									<button onclick="signup(this)" class="btn btn-outline-info" data-toggle="modal"
-										data-target="#successfullModal">Signup</button>
-									<!-- Modal -->
-									<div class="modal fade" id="successfullModal" tabindex="-1"
-										aria-labelledby="exampleModalLabel" aria-hidden="true">
-									</div>
+						<div class="modal-body">
+							<div class="signup">
+								<label for="Email">Email</label>
+								<input type="text" class="form-control" name="email" id="Email"
+									placeholder="Enter Email" width="200px"><br>
+								<label for="Password">Password</label>
+								<input type="password" class="form-control mb-5" name="email" id="Password"
+									placeholder="Enter password" width="200px">
+								<button onclick="signup(this)" class="btn btn-outline-info" data-toggle="modal"
+									data-target="#successfullModal">Signup</button>
+								<!-- Modal -->
+								<div class="modal fade" id="successfullModal" tabindex="-1"
+									aria-labelledby="exampleModalLabel" aria-hidden="true">
 								</div>
 							</div>
-							<div class="modal-footer">
-								<button type="button" id="dataDismiss" class="btn btn-secondary"
-									data-dismiss="modal">Close</button>
-							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="dataDismiss" class="btn btn-secondary"
+								data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
-				<br>
-
 			</div>
+			<br>
+
+		</div>
 
 
-			<!-- The Form -->
-			<!-- <div id="username">
+		<!-- The Form -->
+		<!-- <div id="username">
 				<form class="form" onsubmit="return false;">
 					<i class="material-icons">face</i>
 					<h2>What's Your Nick Name?</h2>
@@ -103,132 +97,130 @@
 					</button>
 				</form>
 			</div> -->
-			<!-- The Form -->
-			<div id="theForm">
-				<form class="form" onsubmit="return false;">
-					<i class="material-icons finger-print">https</i>
-					<i class="material-icons warning">warning</i>
-					<i class="material-icons success">done_all</i>
-					<h2 id="errH" style="font-weight:bold;font-size:1.7em;margin-bottom: 30px;"></h2>
-					<h2 id="err"></h2>
-					<div class="form-group mx-sm-3 mb-3 passBox">
-						<label for="pass" class="sr-only">Password</label>
-						<input type="password" class="form-control animated" id="pass" placeholder="Provided Key"
-							onkeyup="typing();" onfocus="resetErr();" onblur="this.style.borderColor = '#ced4da';" />
-					</div>
-					<button type="submit" disabled="disabled" class="btn btn-primary mb-2" id="submit"
-						onclick="chkPass(this);">
-						Confirm Identity
-					</button>
-				</form>
-			</div>
-
-			<!-- Quiz Starts Here -->
-			<section id="theQuiz">
-				<form id="quizForm" onsubmit="return false;">
-					<h2>JavaScript Quiz:</h2>
-
-					<div id="steps" style="text-align:center;">
-						<!-- Steps will be shown as per questions length -->
-					</div>
-
-					<hr />
-					<!-- One "tab" for each step in the form: -->
-					<div id="tab">
-						<p id="que">---Question---</p>
-						<hr />
-						<div class="custom-control custom-radio">
-							<input type="radio" id="opt1" name="q" class="custom-control-input" onclick="enableBtn(this)"
-								value="1" />
-							<label class="custom-control-label"
-								onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
-								1---</label>
-						</div>
-						<div class="custom-control custom-radio">
-							<input type="radio" id="opt2" name="q" class="custom-control-input" onclick="enableBtn(this)"
-								value="2" />
-							<label class="custom-control-label"
-								onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
-								2---</label>
-						</div>
-						<div class="custom-control custom-radio">
-							<input type="radio" id="opt3" name="q" class="custom-control-input" onclick="enableBtn(this)"
-								value="3" />
-							<label class="custom-control-label"
-								onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
-								3---</label>
-						</div>
-						<div class="custom-control custom-radio">
-							<input type="radio" id="opt4" name="q" class="custom-control-input" onclick="enableBtn(this)"
-								value="4" />
-							<label class="custom-control-label"
-								onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
-								4---</label>
-						</div>
-					</div>
-
-					<div style="overflow:auto;">
-						<div style="float:right;">
-							<button type="button" disabled="disabled" class="btn btn-info mb-2" id="next-button"
-								onclick="next();">
-								Next
-							</button>
-						</div>
-					</div>
-				</form>
-			</section>
-
-			<!-- The Result -->
-			<section id="theResult">
-				<div id="resultCircle">
-					Calculating Your Result...
+		<!-- The Form -->
+		<div id="theForm">
+			<form class="form" onsubmit="return false;">
+				<i class="material-icons finger-print">https</i>
+				<i class="material-icons warning">warning</i>
+				<i class="material-icons success">done_all</i>
+				<h2 id="errH" style="font-weight:bold;font-size:1.7em;margin-bottom: 30px;"></h2>
+				<h2 id="err"></h2>
+				<div class="form-group mx-sm-3 mb-3 passBox">
+					<label for="pass" class="sr-only">Password</label>
+					<input type="password" class="form-control animated" id="pass" placeholder="Provided Key"
+						onkeyup="typing();" onfocus="resetErr();" onblur="this.style.borderColor = '#ced4da';" />
 				</div>
-				<!-- Result Circle End -->
-				<br />
-				<!-- <h1>Congrats! Your Are Passed</h1> -->
-				<h2 id="resultFb" style="font-weight: bold;"></h2>
-				<h3 id="correctAns"></h3>
-				<hr />
-				<button class="btn btn-info" onclick="retakeQuiz();">
-					Retake Quiz
+				<button type="submit" disabled="disabled" class="btn btn-primary mb-2" id="submit"
+					onclick="chkPass(this);">
+					Confirm Identity
 				</button>
-			</section>
+			</form>
 		</div>
-		<!-- Container End -->
-		<button class="btn btn-danger" style="position:absolute; bottom:5px; right:5px;" onclick="logout();" id="logoutBtn">
-			Logout
-		</button>
 
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+		<!-- Quiz Starts Here -->
+		<section id="theQuiz">
+			<form id="quizForm" onsubmit="return false;">
+				<h2>JavaScript Quiz:</h2>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+				<div id="steps" style="text-align:center;">
+					<!-- Steps will be shown as per questions length -->
+				</div>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBHZ-IDrjyJoUe1jQdmkGfmIk1Q-oNbSz8",
-    authDomain: "quiz-app-a8866.firebaseapp.com",
-    projectId: "quiz-app-a8866",
-    storageBucket: "quiz-app-a8866.appspot.com",
-    messagingSenderId: "955326164586",
-    appId: "1:955326164586:web:9920e225d4da86d3ee2413"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+				<hr />
+				<!-- One "tab" for each step in the form: -->
+				<div id="tab">
+					<p id="que">---Question---</p>
+					<hr />
+					<div class="custom-control custom-radio">
+						<input type="radio" id="opt1" name="q" class="custom-control-input" onclick="enableBtn(this)"
+							value="1" />
+						<label class="custom-control-label"
+							onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
+							1---</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="opt2" name="q" class="custom-control-input" onclick="enableBtn(this)"
+							value="2" />
+						<label class="custom-control-label"
+							onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
+							2---</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="opt3" name="q" class="custom-control-input" onclick="enableBtn(this)"
+							value="3" />
+						<label class="custom-control-label"
+							onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
+							3---</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="opt4" name="q" class="custom-control-input" onclick="enableBtn(this)"
+							value="4" />
+						<label class="custom-control-label"
+							onclick="var id = this.previousElementSibling.id; this.setAttribute('for', id)">---Option
+							4---</label>
+					</div>
+				</div>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-		<script src="brain/js/questions.js"></script>
-		<script src="brain/js/script.js"></script>
+				<div style="overflow:auto;">
+					<div style="float:right;">
+						<button type="button" disabled="disabled" class="btn btn-info mb-2" id="next-button"
+							onclick="next();">
+							Next
+						</button>
+					</div>
+				</div>
+			</form>
+		</section>
 
+		<!-- The Result -->
+		<section id="theResult">
+			<div id="resultCircle">
+				Calculating Your Result...
+			</div>
+			<!-- Result Circle End -->
+			<br />
+			<!-- <h1>Congrats! Your Are Passed</h1> -->
+			<h2 id="resultFb" style="font-weight: bold;"></h2>
+			<h3 id="correctAns"></h3>
+			<hr />
+			<button class="btn btn-info" onclick="retakeQuiz();">
+				Retake Quiz
+			</button>
+		</section>
+	</div>
+	<!-- Container End -->
+	<button class="btn btn-danger" style="position:absolute; bottom:5px; right:5px;" onclick="logout();" id="logoutBtn">
+		Logout
+	</button>
 
-	</body>
+	<!-- Firebase -->
+
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCPNThaFxU9sK6uwrvQ1P0fe9Htw9589WM",
+			authDomain: "shahbaazquizapp.firebaseapp.com",
+			projectId: "shahbaazquizapp",
+			databaseURL: "https://shahbaazquizapp-default-rtdb.firebaseio.com/",
+			storageBucket: "shahbaazquizapp.appspot.com",
+			messagingSenderId: "869952442696",
+			appId: "1:869952442696:web:2c481102308152cf9b637d"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="brain/js/questions.js"></script>
+	<script src="brain/js/script.js"></script>
+</body>
+
 </html>

@@ -126,8 +126,8 @@ body {
 $The Main Container
 \*-----------------------------------*/
 .container {
-	width: 560px;
-	height: auto;
+	width: 575px;
+	height: 600px;
 	padding: 0;
 	margin: auto;
 	color: #415868;
@@ -203,7 +203,30 @@ $THE NAME SECTION
 	border: 2px solid #ced4da;
 }
 
-#username form button {
+.signInBtn{
+	position: absolute;
+	bottom: -10px;
+	border-radius: 0 !important;
+	width: 100%;
+	left: 0;
+	font-size: 1.5em !important;
+	height: 60px;
+	border-bottom-left-radius: 7px !important;
+	border-bottom-right-radius: 7px !important;
+}
+.signUpBtn{
+    position: absolute;
+    top: 527px ;
+    bottom: -10px;
+    border-radius: 0 !important;
+    width: 100%;
+    left: 0;
+    font-size: 1.5em !important;
+    height: 60px;
+    border-bottom-left-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+}
+.signInBtn{
 	position: absolute;
 	bottom: -10px;
 	border-radius: 0 !important;
@@ -451,39 +474,4 @@ $RESPONSIVENESS
 	#quizForm #tab label.custom-control-label {
 		border-bottom: 1px solid #ccc;
 	}
-}
-
-.signInBtn{
-	position: absolute;
-	bottom: -10px;
-	border-radius: 0 !important;
-	width: 100%;
-	left: 0;
-	font-size: 1.5em !important;
-	height: 60px;
-	border-bottom-left-radius: 7px !important;
-	border-bottom-right-radius: 7px !important;
-}
-.signUpBtn{
-    position: absolute;
-    top: 527px ;
-    bottom: -10px;
-    border-radius: 0 !important;
-    width: 100%;
-    left: 0;
-    font-size: 1.5em !important;
-    height: 60px;
-    border-bottom-left-radius: 7px !important;
-    border-bottom-right-radius: 7px !important;
-}
-.signInBtn{
-	position: absolute;
-	bottom: -10px;
-	border-radius: 0 !important;
-	width: 100%;
-	left: 0;
-	font-size: 1.5em !important;
-	height: 60px;
-	border-bottom-left-radius: 7px !important;
-	border-bottom-right-radius: 7px !important;
 }
